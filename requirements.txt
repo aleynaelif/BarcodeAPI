@@ -1,0 +1,5 @@
+translate
+webdriver-manager
+selenium
+Flask
+gunicorn
