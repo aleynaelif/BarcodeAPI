@@ -104,5 +104,12 @@ class Scraper:
         return info
 
 
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--barcode')
+    opt = parser.parse_args()
 
-Scraper(delay = 1).run("59032823")
+    sc = Scraper(delay = 1)
+    info = sc.run(opt.barcode)
+    print(info)
